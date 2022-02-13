@@ -1,0 +1,441 @@
+/* CS5610:
+   Edgar Alan David
+   styles.css
+ */
+
+body {
+    background: black;
+    margin: 4px 0 0 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.wd-border-width-thin {
+    border-width: thin;
+}
+
+.wd-left-border-16px{
+    margin-left: 16px;
+}
+
+.wd-left-border-12px{
+    margin-left: 12px;
+}
+
+.wd-right-border-10px{
+    margin-right: 12px;
+}
+
+.wd-top-border-12px{
+    margin-top: 12px;
+}
+
+.wd-bottom-border-12px{
+    margin-bottom: 12px;
+}
+
+.wd-font-color-red {
+    color: red;
+}
+
+.wd-font-color-blue {
+    color: blue;
+}
+
+.wd-font-color-orange {
+    color: orange;
+}
+
+.wd-font-color-white {
+    color: white;
+}
+
+.wd-font-color-lightblue {
+    color: lightblue;
+}
+
+.wd-font-color-lightgray {
+    color: lightgray;
+}
+
+.wd-left-border-76px{
+    /* total pixel from left image
+    16px + 48px +12px
+     */
+    margin-left: 76px;
+}
+
+.wd-container-A {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: rgb(47, 51, 54);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.wd-container-searchBox {
+    width:77%;
+}
+
+.wd-magnifyingGlass {
+    position: absolute;
+    top: 14px;
+    left:52px
+}
+.wd-searchBox {
+    border-radius: 18px;
+    background-color: darkgray;
+    padding: 7px 10px;
+    text-indent:30px;
+    width: 96%;
+    border-color: darkgray;
+}
+
+::placeholder {
+    color: white;
+}
+
+.wd-container-gear {
+    width: 20%;
+    margin-right: 12px;
+    text-align: right
+}
+
+.wd-gear {
+/*  width: 40px;
+    height: 41px;
+    padding: 8px 0 8px 0px;
+    margin-right: 12px;
+    float: right;*/
+    padding-top: 8px;
+    color: blue;
+    font-size: 25px;
+}
+
+.wd-container-B {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+.wd-container-B-1 {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    background-color: darkgray;
+    padding: 4px;
+}
+
+.wd-nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wd-nav-items {
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 16px;
+}
+
+/* normal state of links*/
+.wd-nav-items a {
+    position:relative;
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+    cursor: pointer;
+    transition:all 200ms ease-in;
+}
+
+.wd-nav-items a:hover:after {
+    content: "";
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    bottom: -19px;
+    border: 2px solid rgb(29,161,242);
+    background-color: rgb(29,161,242);
+}
+
+a:hover,
+a:active {
+    color: rgb(29,161,242);
+}
+
+.wd-container-C {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding: 2px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.wd-messages {
+    margin: 4px 0px;
+}
+
+.wd-messages-nomargin {
+    margin: 0;
+}
+
+.wd-C-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-C-title {
+    font-size: 18px;
+    color: white;
+}
+
+.wd-C-number {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-C-author {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-container-D {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding: 2px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.wd-container-E {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding: 2px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.wd-messages-author {
+    font-size: 13px;
+    color: white;
+}
+
+.wd-container-image {
+    padding: 10px 0 10px 0px;
+    width: 20%;
+}
+
+.wd-container-messages {
+    width: 80%;
+}
+
+.wd-image-feature-item {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-right: 16px;
+    border-radius: 10%
+}
+
+.wd-back-link {
+    padding: 10px 0px 10px 0px;
+}
+
+.wd-ellipsis-icon-1 {
+    float: left;
+}
+
+.wd-ellipsis-icon-2 {
+    float: left;
+/*  position: absolute;
+    top: 130px;
+    left:1320px
+*/
+}
+
+.wd-ellipsis-icon-3 {
+    float: left;
+/*  position: absolute;
+    top: 210px;
+    left:1320px
+*/
+}
+
+.wd-ellipsis-icon-4 {
+    float: left;
+/*  position: absolute;
+    top: 660px;
+    left:1320px
+*/
+}
+
+.wd-explore-width-97-percent {
+    width: 97%;
+}
+
+.wd-explore-width-3-percent {
+    width: 3%;
+}
+
+/*Bookmarks CSS*/
+.wd-bookmark-title-handler{
+    width: 95%;
+}
+.wd-bookmark-title {
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+}
+
+.wd-container-A-border {
+    border-bottom-style: solid;
+}
+
+.wd-user-handler {
+    font-size: 13px;
+    color: lightgray;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.wd-bookmark-container-B {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding: 2px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.wd-bookmark-avatar-left {
+    margin-top: 12px;
+}
+
+.wd-bookmark-avatar-right-picture {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%
+}
+
+.wd-bookmark-avatar-right {
+    margin-top: 12px;
+    width: 92%;
+}
+
+.wd-bookmark-author-fontsize {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-bookmark-mainContent {
+    font-size: 15px;
+    width: 506px;
+}
+
+.wd-bookmark-container-E {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding: 2px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.wd-bookmark-E-picture {
+
+}
+
+.wd-bookmark-E-picture-img {
+    width: 504px;
+    height: 264px;
+    border-radius: 10px 10px 0 0;
+    border: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-font-size-15px {
+    font-size: 15px;
+}
+
+.wd-font-size-4px {
+    font-size: 4px;
+}
+
+.wd-bookmark-container-F {
+    padding: 12px;
+    width: 504px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-radius: 0 0 10px 10px;
+}
+
+.wd-bookmark-container-G {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 504px;
+}
+
+.wd-bookmark-G-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-text-space-12px {
+    margin-left: 12px;
+}
+
+.wd-bookmark-ellipsis-icon-1 {
+    float: right;
+/*  position: absolute;
+    top: 30px;
+    left: 320px;
+*/
+}
+
+.wd-bookmark-ellipsis-icon-2 {
+    float: right;
+/*  position: absolute;
+    top: 100px;
+    left: 1320px;
+*/
+}
+
+.wd-icon-noLine {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wd-bookmark-link-icon {
+    font-size: 13px;
+    margin-right: 5px;
+}
