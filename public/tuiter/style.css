@@ -439,3 +439,7 @@ a:active {
     font-size: 13px;
     margin-right: 5px;
 }
+
+.wd-font-weight-bold {
+    font-weight: bold;
+}
