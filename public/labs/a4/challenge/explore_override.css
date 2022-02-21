@@ -1,0 +1,30 @@
+.bg-color-black {
+    background-color: #000000;
+}
+
+.fg-color-lightgrey {
+    color: lightgray;
+}
+
+.bg-color-deepskyblue {
+    background-color: deepskyblue;
+}
+
+.bg-color-lightgray {
+    background-color: lightgray;
+}
+
+.btn-primary.override-button {
+    background-color: lightgray;
+    border-color: lightgray;
+    color: black;
+    /*border-width: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+    font-size: 2em;
+    font-weight: bolder;*/
+}
+
+.border-thin-1px {
+    border-width: 1px;
+}
