@@ -21,6 +21,8 @@
     height: 100%;
     border-radius: 50%;
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .wd-center-search {
@@ -28,6 +30,7 @@
     border-color: lightgray;
     border-width: thin;
     text-indent:30px;
+    width: 90%;
 }
 
 .wd-search-container {
@@ -36,13 +39,19 @@
 
 .wd-center-magnify-glass {
     position: absolute;
-    top: 8px;
-    left:22px
+    top: 7px;
+    left:12px
 }
 
 .wd-center-image-logo {
     border-radius: 10px;
     border: none;
+    padding: 0;
+
+    /* center image vertically */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .wd-text-container {
