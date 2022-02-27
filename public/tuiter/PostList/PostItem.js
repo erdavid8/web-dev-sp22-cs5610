@@ -1,10 +1,14 @@
 const PostItem = (post) => {
     return(`
-                    <li class="list-group-item bg-color-black" xmlns="http://www.w3.org/1999/html">
+                    <li class="list-group-item bg-color-black">
                     <div class="row">
+                    
+                        <!--LEFT: Avatar-->
                         <div class="col-2">
                             <img src=${post.avatarIcon} alt="avatar" class="img-fluid img-thumbnail wd-avatar-sizing">
                         </div>
+                    
+                        <!--RIGHT: POSTS-->
                         <div class="col-10">
                             <div>
                                 <p class="m-0 fs-6">${post.name} <i class="fa-solid fa-circle-check"></i> <span class="fg-color-darkgray">${post.handle} - ${post.time}</span></span></p>
@@ -26,6 +30,7 @@ const PostItem = (post) => {
                                 </div>`
                             }    
 			
+			                <!--icons-->
                             <div class="row mt-3">
                                 <div class="row col-3">
                                     <p class="col-1 fg-color-darkgray"><a href="#"><i class="fa-regular fa-comment fg-color-darkgray"></i></a></p>
