@@ -1,4 +1,4 @@
-import PostSummaryList from "/tuiter/PostSummaryList";
+import PostSummaryList from "/tuiter/PostSummaryList/";
 
 const ExploreComponent = () => {
     return(`
