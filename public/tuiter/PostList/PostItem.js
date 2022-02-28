@@ -18,7 +18,7 @@ const PostItem = (post) => {
                             <!--condition for image border-->
                             ${!post.skip ?
                                 `<div class="row mt-2 m-0 p-0 wd-PostItem-img-top"> 
-                                    <img src=${post.image} class="wd-border-width-thin m-0"> 
+                                    <img src=${post.image} class="wd-border-width-thin-top m-0"> 
                                 </div>
                                 <div class="m-0 p-0 wd-PostItem-text">
                                     <p class="ms-3 mt-0 mb-0 pt-2 fs-6">${post.title}</p>
@@ -26,7 +26,7 @@ const PostItem = (post) => {
                                     <p class="ms-3 mt-0 mb-2 p-0 fs-6 fg-color-darkgray"><i class="fa-solid fa-link"></i> ${post.website}</p>
                                 </div>`:
                                 `<div class="row mt-2 m-0 p-0 wd-PostItem-img-top-bottom">
-                                    <img src=${post.image} class="wd-border-width-thin m-0 p-0">
+                                    <img src=${post.image} class="wd-border-width-thin-rounded-top-bottom m-0 p-0">
                                 </div>`
                             }    
 			

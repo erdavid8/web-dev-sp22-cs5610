@@ -97,7 +97,12 @@
     text-indent: 30px;
 }
 
-.wd-border-width-thin-rounded {
+.wd-border-width-thin-rounded-top-bottom {
     border-width: thin;
     border-radius: 10px 10px 10px 10px;
+}
+
+.wd-border-width-thin-rounded-top {
+    border-width: thin;
+    border-radius: 10px 10px 0px 0px;
 }
