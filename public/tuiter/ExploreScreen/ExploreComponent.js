@@ -1,4 +1,3 @@
-/*import PostSummaryList from "../PostSummaryList";*/
 import PostSummaryList from "/tuiter/PostSummaryList";
 
 const ExploreComponent = () => {

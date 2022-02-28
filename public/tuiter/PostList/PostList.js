@@ -1,5 +1,5 @@
-import post from "public/tuiter/PostList/post.js";
-import PostItem from "public/tuiter/PostList/PostItem.js";
+import post from "/tuiter/PostList/post.js";
+import PostItem from "/tuiter/PostList/PostItem.js";
 
 const PostList = () => {
     return (`

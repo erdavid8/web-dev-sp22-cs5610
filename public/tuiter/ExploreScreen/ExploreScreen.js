@@ -1,6 +1,6 @@
-import NavigationSidebar from "public/tuiter/NavigationSidebar/index.js";
-import WhoToFollowList from "public/tuiter/WhoToFollowList/index.js";
-import ExploreComponent from "public/tuiter/ExploreScreen/ExploreComponent.js";
+import NavigationSidebar from "/tuiter/NavigationSidebar/index.js";
+import WhoToFollowList from "/tuiter/WhoToFollowList/index.js";
+import ExploreComponent from "/tuiter/ExploreScreen/ExploreComponent.js";
 
 (function ($) {
     $('#wd-explore').append(`
