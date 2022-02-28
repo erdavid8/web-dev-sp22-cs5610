@@ -1,6 +1,4 @@
-/*import NavigationSidebar from "../NavigationSidebar/index.js";
-import PostSummaryList from "../PostSummaryList/index.js";*/
-import PostList from "../PostList/PostList.js";
+import PostList from "public/tuiter/PostList/PostList.js";
 
 (function ($) {
     $('#wd-home').append(`
