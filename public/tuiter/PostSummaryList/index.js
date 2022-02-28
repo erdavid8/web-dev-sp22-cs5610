@@ -1,5 +1,5 @@
-import PostSummaryItem from "/tuiter/PostSummaryList/PostSummmaryItem.js";
-import posts from "/tuiter/PostSummaryList/posts.js";
+import PostSummaryItem from "./PostSummmaryItem.js";
+import posts from "./posts.js";
 
 const PostSummaryList = () => {
     return (`

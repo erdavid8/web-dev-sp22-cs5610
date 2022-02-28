@@ -1,5 +1,5 @@
-import WhoToFollowListItem from "/tuiter/WhoToFollowList/WhoToFollowListItem.js";
-import who from "/tuiter/WhoToFollowList/who.js"
+import WhoToFollowListItem from "./WhoToFollowListItem.js";
+import who from "./who.js"
 
 const WhoToFollowList = () => {
     return (`
