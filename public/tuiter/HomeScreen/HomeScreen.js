@@ -1,4 +1,4 @@
-import PostList from "public/tuiter/PostList/PostList.js";
+import PostList from "/tuiter/PostList/PostList.js";
 
 (function ($) {
     $('#wd-home').append(`

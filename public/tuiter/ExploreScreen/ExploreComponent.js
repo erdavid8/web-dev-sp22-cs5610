@@ -1,5 +1,5 @@
 /*import PostSummaryList from "../PostSummaryList";*/
-import PostSummaryList from "public/tuiter/PostSummaryList";
+import PostSummaryList from "/tuiter/PostSummaryList";
 
 const ExploreComponent = () => {
     return(`
@@ -51,7 +51,7 @@ const ExploreComponent = () => {
         
         <!-- back button -->
         <div class="">
-            <a href="public/index.html">Back</a>
+            <a href="/index.html">Back</a>
         </div>
     `);
 }
