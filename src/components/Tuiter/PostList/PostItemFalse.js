@@ -20,7 +20,7 @@ const PostItemFalse = (
     }) => {
     return(
         <div className="row mt-2 m-0 p-0 wd-PostItem-img-bottom">
-            <img src={post.image} className="wd-border-width-thin-rounded-bottom m-0 p-0"/>
+            <img src={post.image} alt="image not found" className="wd-border-width-thin-rounded-bottom m-0 p-0"/>
         </div>
     );
 }

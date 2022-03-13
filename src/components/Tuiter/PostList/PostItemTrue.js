@@ -21,7 +21,7 @@ const PostItemTrue = (
     return(
         <>
             <div className="row mt-2 m-0 p-0 wd-PostItem-img-top">
-                <img src={post.image} className="wd-border-width-thin-top m-0"/>
+                <img src={post.image} alt="image not found" className="wd-border-width-thin-top m-0"/>
             </div>
             <div className="m-0 p-0 wd-PostItem-text">
                 <p className="ms-3 mt-0 mb-0 pt-2 fs-6">{post.title}</p>
