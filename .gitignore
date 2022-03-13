@@ -24,3 +24,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/src/components/Tuiter/images/Java_logo.png
+/src/components/Tuiter/images/NASA_logo.png
+/src/components/Tuiter/images/relativity_space_logo.png
+/src/components/Tuiter/images/virgin_galactic_logo.png

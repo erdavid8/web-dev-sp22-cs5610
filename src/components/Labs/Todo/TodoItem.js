@@ -11,7 +11,7 @@ const TodoItem = ({
         /* dont need $ use defaultChecked to set initial state */
         <li>
             <input type="checkbox"
-                defaultedChecked={todo.done}/>
+                defaultedchecked={todo.done}/>
             {todo.title}
             ({todo.status})
         </li>);

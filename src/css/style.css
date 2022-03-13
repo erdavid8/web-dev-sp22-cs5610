@@ -1,0 +1,190 @@
+/* start NavigationSidebar */
+
+.bg-color-deepskyblue { /* text color background NavigationSidebar */
+    background-color: deepskyblue;
+}
+
+.fg-color-lightgrey { /* font color NavigationSidebar */
+    color: lightgray;
+}
+
+ul.no-bullets { /* remove bullets in ul NavigationSidebar */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* end NavigationSidebar */
+
+/* start ExploreComponent */
+
+.wd-center-search { /* search bar ExploreComponent */
+    border-radius: 20px;
+    border-color: lightgray;
+    border-width: thin;
+    text-indent:40px;
+    width: 95%;
+    height: 35px;
+}
+
+.wd-search-container { /* search bar ExploreComponent */
+    position: relative;
+}
+
+.no-padding { /* search bar ExploreComponent */
+    padding: 0;
+}
+
+.wd-center-magnify-glass { /* search bar ExploreComponent */
+    position: absolute;
+    top: 10px;
+    left:12px
+}
+
+::placeholder { /* search bar ExploreComponent */
+    color: black;
+}
+
+.wd-center-image-logo { /* center image ExploreComponent */
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+
+    /* center image vertically and position appropriately horizontally */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70px;
+    width: 70px;
+    margin-left: 5px;
+}
+
+.wd-text-container { /* center image text ExploreComponent */
+    position: relative;
+    text-align: left;
+}
+
+.wd-text-bottom-left { /* center image text ExploreComponent */
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.fg-color-deepskyblue { /* gear ExploreComponent */
+    color: deepskyblue;
+}
+
+.fg-color-ashgrey {
+    color: #6c757d;
+}
+
+.bg-color-lightgray { /* background color of input search box ExploreComponent */
+    background-color: lightgray;
+}
+
+.bg-color-222 { /* background color of posts ExploreComponent */
+    background-color: #222;
+}
+
+.border-thin-1px-ashgray-first { /* first border width and color ExploreComponent */
+    border-width: 1px;
+    border-color: #2d2d2d;
+    border-radius: 6px 6px 0 0; /* first change this later */
+}
+
+.border-thin-1px-ashgray-last { /* last border width and color ExploreComponent */
+    border-width: 1px;
+    border-color: #2d2d2d;
+    border-radius: 0 0 6px 6px; /* last change this later */
+}
+
+.border-thin-1px-ashgray-middle { /* middle border width and color ExploreComponent */
+    border-width: 1px;
+    border-color: #2d2d2d;
+}
+
+.navbar-custom { /* 'For you' navbar ExploreComponent */
+    border-radius: 4px 4px 0 0;
+    background-color: deepskyblue;
+}
+
+/* end ExploreComponent */
+
+/* start WhoToFollowItem */
+
+.wd-left-button-tweet { /* Follow button WhoToFollowItem */
+    width: 80%;
+    border-radius: 20px;
+    /* centering for work tweet */
+    margin-left: 20px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wd-image-sizing { /* avatar image WhoToFollowItem */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* end WhoToFollowItem */
+
+/* start HomeScreen */
+
+.bg-color-black { /* background color HomeScreen */
+    background-color: #000000;
+}
+
+.fg-color-darkgray { /* handle, time, comments, tweets, heart, etc. HomeScreen */
+    color: #4f5050;
+}
+
+.wd-avatar-sizing { /* avatar icon HomeScreen */
+    width: 100%;
+    height: 17%;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wd-PostItem-img-top { /* border top image HomeScreen */
+    border-radius: 10px 10px 0 0;
+    border: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: thin;
+}
+
+.wd-PostItem-img-bottom { /* border bottom image HomeScreen */
+    border-radius: 10px 10px 10px 10px;
+    border: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: thin;
+}
+
+.wd-PostItem-text { /* border text HomeScreen */
+    border-radius: 0 0 10px 10px;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: thin;
+}
+
+.wd-border-width-thin-rounded-bottom { /* image rounded bottom HomeScreen */
+    border-radius: 10px 10px 10px 10px;
+}
+
+.wd-ellipsis-right {
+    float: right;
+}
+
+/* end HomeScreen */

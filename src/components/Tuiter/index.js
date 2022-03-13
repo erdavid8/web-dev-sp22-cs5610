@@ -1,13 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import NavigationSidebar from "./NavigationSidebar";
+import ExploreScreen from "./ExploreScreen/ExploreScreen";
 
 const Tuiter = () => {
     return(
-
-        // Lab
         <>
-            <h1>Tuiter</h1>
+            <ExploreScreen/>
+            <br/>
             <Link to="/hello">
                 Hello
             </Link> |
@@ -15,9 +14,6 @@ const Tuiter = () => {
                 Labs
             </Link>
         </>
-
-        // Tuiter
-/*        <NavigationSidebar active="home"/>*/
     )
 };
 
