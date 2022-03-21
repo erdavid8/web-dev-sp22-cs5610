@@ -54,7 +54,7 @@ ul.no-bullets { /* remove bullets in ul NavigationSidebar */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    height: 70px;
+    height: 64px;
     width: 70px;
     margin-left: 5px;
 }
