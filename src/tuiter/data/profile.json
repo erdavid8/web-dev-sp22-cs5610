@@ -1,0 +1,18 @@
+[
+	{
+		"_id": "1234",
+		"firstName": "Edgar Alan David",
+		"lastName": "David",
+		"handle": "drae",
+		"profilePicture": "/images/drae.jpg",
+		"bannerPicture": "/images/Northeastern_University.jpg",
+		"bio": "An Electronics engineer by profession, graduate student of computer science, semiconductor test development experience, swimmer, bonsai tree enthusiast. No pain, No gain!!!",
+		"location": "Boston, MA",
+		"dataOfBirth": "7/20/2000",
+		"website": "linkedin.com/in/edgar-alan-r-david-a71a089",
+		"dateJoined": "07/2010",
+		"followingCount": 143,
+		"followersCount": 720,
+		"tweets": 111572
+	}
+]

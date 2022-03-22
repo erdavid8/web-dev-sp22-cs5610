@@ -1,0 +1,108 @@
+
+[
+  {
+    "_id": "123",
+    "topic": "Web Development",
+    "username": "ReactJS",
+    "liked": true,
+    "verified": false,
+    "handle": "@ReactJS",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "video": "https://www.youtube.com/embed/unKvMC3Y1kI"
+    },
+    "logoImage": "/images/react-icon-15.png",
+    "avatarIcon": "/images/react-icon-15.png",
+    "comments": 123,
+    "retuits": 234,
+    "likes": 345,
+    "sequence": "first"
+  },
+  {
+    "_id": "567",
+    "topic": "Space",
+    "username": "SpaceX",
+    "liked": false,
+    "verified": false,
+    "handle": "@spacex",
+    "title": "",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "image": "/images/space-x-startship.jpg"
+    },
+    "time": "last month",
+    "logoImage": "/images/spacex-logo.jpg",
+    "avatarIcon": "/images/spaceX-logo.png",
+    "tuits": "120K",
+    "comments": 45,
+    "retuits": 65,
+    "likes": 1234,
+    "sequence":  "middle"
+  },
+  {
+    "_id": "234",
+    "topic": "Space",
+    "username": "Scott Manly",
+    "liked": true,
+    "verified": true,
+    "handle": "@DJSnM",
+    "postedOn": "2020-12-10",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "image": "/images/Scott_Manley_tuit.jpg"
+    },
+    "logoImage": "/images/Scott_Manley_logo.jpg",
+    "avatarIcon": "/images/ScottManly_pix.png",
+    "tuits": "123K",
+    "comments": 2,
+    "retuits": 10,
+    "likes": 45,
+    "sequence":  "middle"
+  },
+  {
+    "_id": "345",
+    "topic": "Web Development",
+    "username": "jQuery",
+    "liked": false,
+    "verified": false,
+    "handle": "@jQuery",
+    "title": "jQuery",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "image": "/images/jquery_tuit.jpeg"
+    },
+    "time": "last week",
+    "logoImage": "/images/jquery_logo.png",
+    "avatarIcon": "/images/jquery_logo.png",
+    "tuits": "122K",
+    "comments": 8,
+    "retuits": 7812,
+    "likes": 34,
+    "sequence":  "middle"
+  },
+  {
+    "_id": "456",
+    "topic": "Web Development",
+    "username": "NodeJS",
+    "liked": true,
+    "verified": true,
+    "handle": "@NodeJS",
+    "title": "",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "image": "/images/NoddeJS_tuit.png"
+    },
+    "time": "last month",
+    "logoImage": "/images/nodejs_logo.png",
+    "avatarIcon": "/images/nodejs_logo.png",
+    "tuits": "120K",
+    "comments": 5689,
+    "retuits": 2081,
+    "likes": 1098,
+    "sequence": "last"
+  }
+]
