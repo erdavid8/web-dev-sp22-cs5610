@@ -1,10 +1,9 @@
 import React from "react";
 import whos from "../data/who.json"
 import WhoToFollowListItem from "./WhoToFollowListItem";
-import {useSelector} from "react-redux";
 
 const WhoToFollowList = () => {
-    const who = useSelector((state) => state.who);
+    /* const who = useSelector((state) => state.who); */
 
     return(
         <>
@@ -22,7 +21,3 @@ const WhoToFollowList = () => {
     )};
 
 export default WhoToFollowList;
-
-/*
-const who = useSelector((state) => state);
- */

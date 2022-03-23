@@ -1,6 +1,5 @@
 import React from "react";
 import {useDispatch} from "react-redux";                                        // import useDispatch
-import tuitsReducer from "../reducers/tuits-reducer";
 import TuitStat from "./TuitStat"
 
 const TuitListItem = ({tuits}) => {
@@ -34,7 +33,7 @@ const TuitListItem = ({tuits}) => {
                             }
                             {
                                 tuits.attachments && tuits.attachments.image &&
-                                <img src={tuits.attachments.image} alt="image not found" className="wd-border-width-thin-rounded-bottom m-0 p-0"/>
+                                <img src={tuits.attachments.image} alt="attachment" className="wd-border-width-thin-rounded-bottom m-0 p-0"/>
                             }
                         </div>
 
@@ -50,19 +49,3 @@ const TuitListItem = ({tuits}) => {
 }
 
 export default TuitListItem;
-
-/*
-            _id:123,
-            avatarIcon:"../elon_musk.png",
-            username: "ReactJS",
-            handle: "@ReactJS",
-            time: "2h",
-            tuit: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            attachments: {
-                video: "https://www.youtube.com/embed/unKvMC3Y1kI"
-            },
-            comments: 123,
-            retuits: 234,
-            likes: 345
-
-*/

@@ -20,7 +20,3 @@ const TuitList = () => {
 }
 
 export default TuitList;
-
-/*
-const tuits = useSelector((state) => state.tuits);
- */

@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {useDispatch} from "react-redux";
 
 const ProfileScreen = ({profile}) => {
     return(
@@ -16,11 +15,11 @@ const ProfileScreen = ({profile}) => {
 
                 <div className="row pe-0 col-12">
 
-                    <img className="pe-0 wd-tweet-banner-position" src={profile.bannerPicture}/>
+                    <img className="pe-0 wd-tweet-banner-position" src={profile.bannerPicture} alt={"banner"}/>
 
                     <div className=" row col-12">
                         <div className="col-6">
-                            <img className="wd-tweet-profile-position wd-tweet-profile-responsive d-none d-sm-none d-md-inline d-lg-inline-inline d-xl-inline-flex d-xl-inline d-xxl-inline" src={profile.profilePicture}/>
+                            <img className="wd-tweet-profile-position wd-tweet-profile-responsive d-none d-sm-none d-md-inline d-lg-inline-inline d-xl-inline-flex d-xl-inline d-xxl-inline" src={profile.profilePicture} alt="profile"/>
                         </div>
 
                         <div className="col-12">
@@ -69,35 +68,3 @@ const ProfileScreen = ({profile}) => {
 }
 
 export default ProfileScreen;
-
-/*
-<button className="btn btn-primary wd-right-button-editprofile text-center override-button">
-
-                <div className="row pe-0 me-0 wd-tweet-banner-position">
-
-     <i className="fa-regular fa-location-dot"></i>
-
-
-
-
-        profile = {
-            _id: 5678,
-            firstName: "Edgar Alan",
-            lastName: "David",
-            handle: "drae",
-            profilePicture: "/images/drae.jpg",
-            bannerPicture: "/images/Northeastern_University.jpg",
-            bio: "An Electronics engineer by profession, graduate student of computer science, semiconductor test development experience, swimmer, bonsai tree enthusiast. No pain, No gain!!!",
-            location: "Boston, MA",
-            dataOfBirth: "7/20/1975",
-            dateJoined: "July 2010",
-            followingCount: 143,
-            followersCount: 720,
-            tweets: 111572
-        }
-
-        <p className="mb-0"><h5 className="fw-bold mb-0">{profile.firstName + ' ' + profile.lastName}</h5></p>
-
-        <p className="mb-0 ms-4"><h6 className="mb-0 fg-color-726D6D">@{profile.handle}</h6></p>
-        <p className="mb-0 mt-3 ms-4 wd-paragraph-justify "><h6 className="mb-0 ">{profile.bio}</h6></p>
- */

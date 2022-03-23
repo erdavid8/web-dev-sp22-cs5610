@@ -1,5 +1,4 @@
-import tuits from "../data/tuits.json"
-/* import whoJson from "../data/who.json"; */               // import data from JSON file
+import tuits from "../data/tuits.json"                      // import data from JSON file
 
 const tuitsReducer = (state = tuits, action) => {
     switch (action.type) {                                  // add a switch to handler different events
@@ -18,12 +17,10 @@ const tuitsReducer = (state = tuits, action) => {
                     return tuits;                           // keep old tuit object
                 }
             });
-            break;
         case 'delete-tuit':                                 // handles the delete-tuit event
             return state.filter(                            // calculate new state
                 tuit => tuit._id !== action.tuits._id);      // filter the tuit that is delited in the user interface
-            break;
-        case 'create-tuit':                                 // handles the crete-tuit event
+         case 'create-tuit':                                 // handles the crete-tuit event
             const newTuit = {                               // creates new tuit object with several default values i.e. _id, postedBy, username, etc.
                 tuit: action.tuit,
                 _id: (new Date()).getTime() + '',
@@ -41,7 +38,6 @@ const tuitsReducer = (state = tuits, action) => {
             }
             return [ newTuit,
             ...state,];
-            break;
         default:
             return tuits;
     }

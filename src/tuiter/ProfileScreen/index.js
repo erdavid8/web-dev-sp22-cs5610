@@ -1,6 +1,5 @@
 import React from "react";
 import ProfileScreen from "./ProfileScreen";
-/* import profile from "../data/profile.json" */
 import {useSelector} from "react-redux";
 
 const ProfileList = () => {
