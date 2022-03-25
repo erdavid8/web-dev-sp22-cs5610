@@ -19,11 +19,11 @@ function App() {
         <div className="container">
             <Routes>
                 <Route path="/">
-                    {/* <Route path="hello" element={<HelloWorld/>}/> */}
                     <Route index element={<HelloWorld/>}/>
                     <Route path="hello" exact={true} element={<HelloWorld/>}/>
 
                     <Route path="labs" element={<Labs/>}/>
+                    {/* <Route path="hello" element={<HelloWorld/>}/> */}
                     <Route path="tuiter" element={<Tuiter/>}>
                         <Route index element={<HomeScreen/>}/>
                         {/*<Route path="home" element={<HomeScreen/>}/>*/}
