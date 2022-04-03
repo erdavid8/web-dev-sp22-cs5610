@@ -22,7 +22,7 @@ const TuitList = () => {
     return(
         <>
             {
-                tuits.map(tuit => {
+                tuits.map && tuits.map(tuit => {                            // iterate over each tuit and rendter it as a tuitListItem
                     return(
                         <TuitListItem tuits={tuit} key={tuit._id}/>
                     );
