@@ -1,12 +1,15 @@
 import React from "react";
 import {useDispatch} from "react-redux";                                        // import useDispatch
 import TuitStat from "./TuitStat"
+import {deleteTuit} from "../../actions/tuits-actions";                         // delete tuit
 
 const TuitListItem = ({tuits}) => {
     const dispatch = useDispatch();                                             // get dispatcher to send message to reducer
+/* removed for homework 8
     const deleteTuit = (tuits) => {                                             // handle the delete-tuit event
-        dispatch({type: 'delete-tuit', tuits})                            // notify redux with delete-tuit event and delete tuit at the same time
+        dispatch({type: 'delete-tuit', tuits})                                  // notify redux with delete-tuit event and delete tuit at the same time
     }
+*/
     return(
         <>
             <li className="list-group-item">
@@ -18,7 +21,7 @@ const TuitListItem = ({tuits}) => {
 
                     <div className="col-10">
                         <div>
-                            <p className="m-0 fs-6">{tuits.username} <i className="fa-solid fa-circle-check"></i> <span className="fg-color-darkgray">{tuits.handle}<i onClick={() => deleteTuit(tuits)} className="fa-solid fa-xmark wd-ellipsis-right ms-6"></i></span></p>
+                            <p className="m-0 fs-6">{tuits.postedBy.username} <i className="fa-solid fa-circle-check"></i> <span className="fg-color-darkgray">{tuits.handle}<i onClick={() => deleteTuit(dispatch, tuits)} className="fa-solid fa-xmark wd-ellipsis-right ms-6"></i></span></p>
                             <p className="m-0 fs-6">{tuits.tuit}</p>
                         </div>
 

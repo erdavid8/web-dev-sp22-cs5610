@@ -1,45 +1,22 @@
-import tuits from "../data/tuits.json"                      // import data from JSON file
+/* import tuits from "../data/tuits.json" */                  // import data from JSON file
+import {CREATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS, UPDATE_TUIT} from "../../actions/tuits-actions";
 
-const tuitsReducer = (state = tuits, action) => {
+const tuitsReducer = (state = [], action) => {
     switch (action.type) {                                  // add a switch to handler different events
-        case 'like-tuit':                                   // handles the like-tuit event
-            return state.map(tuits =>{                      // calculate new state
-                if (tuits._id === action.tuits._id) {       // if it coincides with the tuit we liked
-                    if (tuits.liked === true) {             // if tuit is already liked
-                        tuits.liked = false;                // set the tuit.liked to false
-                        tuits.likes--;                      // decrement tuit.likes by 1
-                    }  else {                               // otherwise
-                        tuits.liked = true;                 // set the tuit.liked to true
-                        tuits.likes++;                      // increment tuit.likes by 1
-                    }
-                    return tuits;                           // include new tuit changes in the array of tuits
-                } else {                                    // otherwise
-                    return tuits;                           // keep old tuit object
-                }
-            });
-        case 'delete-tuit':                                 // handles the delete-tuit event
-            return state.filter(                            // calculate new state
-                tuit => tuit._id !== action.tuits._id);      // filter the tuit that is delited in the user interface
-         case 'create-tuit':                                 // handles the crete-tuit event
-            const newTuit = {                               // creates new tuit object with several default values i.e. _id, postedBy, username, etc.
-                tuit: action.tuit,
-                _id: (new Date()).getTime() + '',
-                username: "Drae",
-                handle: "@iluvdrae",
-                attachments: {
-                    image: "/images/apple_logo.jpg"
-                },
-                logoImage: "/images/app-store-logo.png",
-                avatarIcon: "/images/app-store-logo.png",
-                comments: 20,
-                retuits: 1115,
-                likes: 222,
-                replies: 333,
-            }
-            return [ newTuit,
-            ...state,];
+        case FIND_ALL_TUITS:
+            return action.tuits
+        case DELETE_TUIT:
+            return state.filter(
+                tuit => tuit._id !== action.tuits._id);
+        case CREATE_TUIT:
+            return [
+                ...state, action.newTuit];
+        case UPDATE_TUIT:
+            return state.map(
+                tuit => tuit._id === action.tuit._id ? action.tuit : tuit
+            );
         default:
-            return tuits;
+            return state;
     }
 };
 

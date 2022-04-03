@@ -22,7 +22,7 @@ const Tuiter = () => {
                 <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-9 col-9 mt-1 ps-1 pe-3" style={{"position":"relative"}}>
                     <Outlet/>
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block mt-1">
+                <div className="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block ps-0">
                     <WhoToFollowList/>
                 </div>
             </div>

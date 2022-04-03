@@ -192,8 +192,8 @@ ul.no-bullets { /* remove bullets in ul NavigationSidebar */
 /* start TuitItem */
 
 .wd-avatar-sizing_tuit { /* avatar icon HomeScreen */
-    width: 90%;
-    height: 13%;
+    width: 95%;             /* original value HW7: 90 */
+    height: 60%;            /* original value HW7: 13 */
     border-radius: 50%;
     border: none;
     display: block;
