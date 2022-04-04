@@ -16,7 +16,7 @@ const TuitListItem = ({tuits}) => {
                 <div className="row">
 
                     <div className="col-2">
-                        <img src={tuits.avatarIcon} alt="avatar" className="img-fluid img-thumbnail wd-avatar-sizing_tuit p-0"/>
+                        <img src={tuits.avatarIcon} alt="avatar" className="img-fluid img-thumbnail wd-image-sizing-whatshappening p-0"/>
                     </div>
 
                     <div className="col-10">
@@ -52,3 +52,5 @@ const TuitListItem = ({tuits}) => {
 }
 
 export default TuitListItem;
+
+/* change Apr 4: wd-avatar-sizing_tuit*/

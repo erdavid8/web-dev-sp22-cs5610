@@ -17,12 +17,12 @@ const TuitStat = ({tuits}) => {
                     <p className="col-1 ms-0 fg-color-white">{tuits.comments}</p>
                 </div>
 
-                <div className="row col-3 ms-1">
+                <div className="row col-3 ms-0">
                     <p className="col-1 fg-color-white"><i className="fa-solid fa-retweet fg-color-white"></i></p>
                     <p className="col-1 ms-0 fg-color-white">{tuits.retuits}</p>
                 </div>
 
-                <div className="row col-3 ms-2">
+                <div className="row col-3 ms-1">
                 {/* <div className="row col-3 ms-3" onClick={likeTuit}>
                     {
                         tuits.liked &&
@@ -41,7 +41,7 @@ const TuitStat = ({tuits}) => {
                         <p className="col-1 ms-0 fg-color-white">{tuits.likes.toLocaleString()}</p>
                 </div>
 
-                <div className="row col-3 ms-3">
+                <div className="row col-3 ms-2">
                     <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {...tuits, dislikes: tuits.dislikes + 1})} className="fa-solid fa-thumbs-down"></i></p>
                     <p className="col-1 ms-0 fg-color-white">{tuits.dislikes.toLocaleString()}</p>
                 </div>
