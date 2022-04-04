@@ -28,6 +28,7 @@ export const updateTuit = async (dispatch, tuit) => {
     })
 }
 export const deleteTuit = async (dispatch, tuits) => {
+    await service.deleteTuit(tuits)
     dispatch({
         type: DELETE_TUIT,
         tuits

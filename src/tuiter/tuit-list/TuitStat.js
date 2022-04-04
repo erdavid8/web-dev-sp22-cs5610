@@ -6,7 +6,7 @@ const TuitStat = ({tuits}) => {
     const dispatch = useDispatch();                             // use the hook to get dispatcher
 /*
     const likeTuit = () => {                                    // handle the like-tuit click event
-        dispatch({type: 'like-tuit', tuits});              // notify reducer tuit was liked. send action object with type and tuit
+        dispatch({type: 'like-tuit', tuits});                   // notify reducer tuit was liked. send action object with type and tuit
     };
 */
     return(
@@ -38,12 +38,12 @@ const TuitStat = ({tuits}) => {
                     }*/}
 
                         <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {...tuits, likes: tuits.likes + 1})} className="fa-solid fa-thumbs-up"></i></p>
-                        <p className="col-1 ms-0 fg-color-white">{tuits.likes}</p>
+                        <p className="col-1 ms-0 fg-color-white">{tuits.likes.toLocaleString()}</p>
                 </div>
 
                 <div className="row col-3 ms-3">
                     <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {...tuits, dislikes: tuits.dislikes + 1})} className="fa-solid fa-thumbs-down"></i></p>
-                    <p className="col-1 ms-0 fg-color-white">{tuits.dislikes}</p>
+                    <p className="col-1 ms-0 fg-color-white">{tuits.dislikes.toLocaleString()}</p>
                 </div>
             </div>
         </>

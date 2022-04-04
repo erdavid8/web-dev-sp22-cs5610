@@ -17,8 +17,7 @@ const TuitList = () => {
     }
     useEffect(findAllTuits, []);
 */
-    useEffect(() =>
-    findAllTuits(dispatch), []);
+    useEffect(() => findAllTuits(dispatch), [dispatch]);
     return(
         <>
             {
