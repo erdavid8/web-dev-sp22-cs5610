@@ -1,10 +1,18 @@
 import React, {useState} from "react";                                   // get useState hook
 import {useDispatch} from "react-redux";
-import {createTuit, deleteTuit} from "../../actions/tuits-actions";                  // from tuits-actions
+import {createTuit} from "../../actions/tuits-actions";                  // from tuits-actions
 
 const WhatsHappening = () => {
-//  let [whatsHappening, setWhatsHappening] = useState('');     // create whatsHappening state variable
-    const [newTuit, setNewTuit] = useState({tuit: 'New tuit'}); // for homework 8
+//  let [whatsHappening, setWhatsHappening] = useState('');             // create whatsHappening state variable
+    const [newTuit, setNewTuit] = useState({
+        postedBy: {username: "Pat G."},
+        tuit: 'New tuit',
+        avatarIcon: "/images/pat_gelsinger_avatar.jpg",
+        likes: 0,
+        dislikes: 0,
+        liked: false,
+        disliked: false
+    }); // for homework 8
     const dispatch = useDispatch();                                      // use the hook to get dispatcher
 
 /*
@@ -19,7 +27,7 @@ const WhatsHappening = () => {
             <li className="list-group-item wd-whatshappening-block">
                 <div className="row">
                     <div className="col-2">
-                        <img src="\images\elon_musk_sideview.jpg" alt="avatar" className="img-fluid img-thumbnail wd-image-sizing-whatshappening"/>
+                        <img src="\images\intel_logo.jpg" alt="avatar" className="img-fluid img-thumbnail wd-image-sizing-whatshappening"/>
                     </div>
                     <div className="col-10">
                         <div className="row ps-0">
